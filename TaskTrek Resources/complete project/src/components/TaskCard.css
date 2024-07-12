@@ -1,0 +1,85 @@
+.task_card {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.task_text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.task_tag {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.task_actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit_icon, .delete_icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.edit_icon:hover, .delete_icon:hover {
+    opacity: 0.7;
+}
+
+.task_edit_input {
+    width: calc(100% - 30px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task_save_button {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task_save_button:hover {
+    background-color: #45a049;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border: 1px solid #dfe3e6;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tag.selected {
+    background-color: #dfe3e6;
+}
